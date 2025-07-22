@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3dvr Mind-Friendly System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-sky-50 text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white p-4 shadow flex justify-between items-center">
+    <h1 class="text-xl font-bold">🧠 3dvr Dashboard</h1>
+    <nav class="space-x-4 text-sm">
+      <a href="#" class="hover:underline">Notes</a>
+      <a href="#" class="hover:underline">Tasks</a>
+      <a href="#" class="hover:underline">Library</a>
+      <a href="#" class="hover:underline">Chat</a>
+    </nav>
+  </header>
+
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="bg-blue-100 w-64 p-4 space-y-4 border-r border-blue-200 hidden md:block">
+      <h2 class="text-lg font-semibold">🧭 Quick Nav</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-200">📝 Recent Notes</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-200">📋 Today’s Tasks</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-200">📦 Library</a></li>
+        <li><a href="#" class="block p-2 rounded hover:bg-blue-200">💬 Chat</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 space-y-8">
+      <section>
+        <h2 class="text-xl font-bold mb-2">📝 Notes</h2>
+        <div class="bg-white rounded-lg shadow p-4 space-y-2">
+          <textarea placeholder="Write a thought..." class="w-full p-2 border rounded resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Save Note</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold mb-2">📋 Tasks</h2>
+        <ul class="space-y-2">
+          <li class="bg-white p-3 rounded shadow flex justify-between items-center">
+            <span>Finish homepage</span>
+            <button class="text-sm text-green-600 hover:underline">✔ Done</button>
+          </li>
+          <li class="bg-white p-3 rounded shadow flex justify-between items-center">
+            <span>Write blog post about flow</span>
+            <button class="text-sm text-green-600 hover:underline">✔ Done</button>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold mb-2">📦 Library</h2>
+        <div class="bg-white p-4 rounded shadow space-y-2">
+          <p class="text-sm">🔗 <a href="#" class="text-blue-600 hover:underline">Open Source Design Patterns</a></p>
+          <p class="text-sm">📁 <a href="#" class="text-blue-600 hover:underline">3dvr Brand Kit</a></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Floating Quick Add Button -->
+  <button class="fixed bottom-6 right-6 bg-blue-700 text-white rounded-full p-4 shadow-lg hover:bg-blue-800 text-2xl">
+    ➕
+  </button>
+
+</body>
+</html>
